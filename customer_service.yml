@@ -1,10 +1,14 @@
 server:
-   port: 8097
+   port: 8090
   
 #Conextion to Mongo DB
 spring:
-    application:     name: customerManagement    data:
-         mongodb:           uri: mongodb://localhost:27017/customerManagement       
+  application:
+    name: customerManagement
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/customerManagement
+         
 #eureka:
 #  client:
 #    serviceUrl:
