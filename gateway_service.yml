@@ -9,6 +9,10 @@ spring:
         uri: http://localhost:8090/
         predicates:
         - Path=/customer/**
+      - id: product_service
+        uri: http://localhost:8093/
+        predicates:
+        - Path=/product/**   
 eureka:
   client:
     serviceUrl:
