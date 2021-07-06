@@ -1,3 +1,6 @@
+server:
+   port: 8090
+   
 #Conextion to Mongo DB
 spring:
   application:
