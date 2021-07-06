@@ -16,7 +16,16 @@ spring:
       - id: transaction_service
         uri: http://localhost:8093/
         predicates:
-        - Path=/transaction/**        
+        - Path=/transaction/**      
+        
+#hystrix:
+#    command:
+#        fallbackcmd:
+#            execution:
+#                isolation:
+#                    thread:
+#                        timeoutInMilliseconds: 2000
+        
 eureka:
   client:
     serviceUrl:
