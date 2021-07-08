@@ -9,25 +9,25 @@ spring:
     mongodb:
       uri: mongodb://localhost:27017/CUSTOMER
          
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8099/eureka/
-management:
-  endpoints:
-    web:
-      exposre:
-        include: "*"
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8099/eureka/
+#management:
+#  endpoints:
+#    web:
+#      exposre:
+#        include: "*"
         
-resilience4j.circuitbreaker:
-    instances:
-        customer-service:
-            failureRateThreshold: 40
-            waitDurationInOpenState: 4s
-            minimumNumberOfCalls: 5
+#resilience4j.circuitbreaker:
+#    instances:
+#        customer-service:
+#            failureRateThreshold: 40
+#            waitDurationInOpenState: 4s
+#            minimumNumberOfCalls: 5
 
-resilience4j.timelimiter:
-    instances:
-        customer-service:
-            timeoutDuration: 2s
-            cancelRunningFuture: true
+#resilience4j.timelimiter:
+#    instances:
+#        customer-service:
+#            timeoutDuration: 2s
+#            cancelRunningFuture: true
