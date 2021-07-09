@@ -7,12 +7,13 @@ spring:
     name: product_service
   data:
     mongodb:
-      uri: mongodb://localhost:27017/PRODUCT
+#      uri: mongodb://localhost:27017/PRODUCT
+      uri: mongodb://admin:password@mongodb-service:27017/PRODUCT
          
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://docker-registry-service:8761/eureka/
 management:
   endpoints:
     web:
