@@ -10,7 +10,7 @@ spring:
 #      uri: mongodb://localhost:27017/CUSTOMER
 #      uri: mongodb://admin:password@mongodb-service:27017/CUSTOMER
 #      uri: mongodb+srv://admin:password@my-atlas-cluster-mdyjt.mongodb.net/CUSTOMER?retryWrites=true&w=majority
-      uri: mongodb://admin:password@mongodb-service:27017/USTOMER
+      uri: mongodb://admin:password@mongodb-service:27017/CUSTOMER
 eureka:
   client:
     serviceUrl:
