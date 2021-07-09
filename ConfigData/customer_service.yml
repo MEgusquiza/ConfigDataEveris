@@ -7,8 +7,8 @@ spring:
     name: customer_service
   data:
     mongodb:
-      uri: mongodb://localhost:27017/CUSTOMER
-         
+#      uri: mongodb://localhost:27017/CUSTOMER
+      uri: mongodb://admin:password@mongodb-service:27017/CUSTOMER
 eureka:
   client:
     serviceUrl:
