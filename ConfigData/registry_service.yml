@@ -3,16 +3,10 @@ server:
 
 eureka:
    instance:
-    hostname: docker-registry-service
+    hostname: localhost
    client: 
      registerWithEureka: false
      fetchRegistry: false
      serviceUrl:
       defaultZona: http://${eureka.instance.hostname}:${server.port}/eureka/
  
-logging:
-  level:
-   com:
-   netflix:
-     eureka: OFF
-     discovery: OFF
